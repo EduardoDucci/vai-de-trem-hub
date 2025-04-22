@@ -8,7 +8,7 @@ body{
 
 #celular{
     margin: 100px 700px;
-    padding: 200px 100px;
+    padding: 100px 50px;
     background-color: #a6ccff;
     border-style:solid ;
     border-width: 10px;
@@ -19,7 +19,7 @@ body{
 }
 
 #icone{
-    width: 170px;
+    width: 140px;
 }
 
 #bem__vindo{
@@ -32,7 +32,12 @@ font-size: 25px;
     text-align: center;
 }
 
-#id{
+.idr{
     background-color: #539bf8;
-    padding: 17px;
+    padding: 0px;
+    margin: 5px;
+    color: white;
+    text-decoration: underline;
+    opacity: 50%;
+    text-align: center;
 }
