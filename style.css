@@ -91,3 +91,30 @@ font-size: 25px;
     margin-top: 80px;
     font-size: 30px;
 }
+
+.brazul{
+    background-color: #539bf8;
+    padding: 0px;
+    padding-left: 20px;
+    margin: 5px;
+    color: white;
+    text-decoration: underline;
+    
+}
+
+.brazulb{
+    background-color: #539bf8;
+    padding: 0px;
+    margin: 5px;
+    color: white;
+    text-decoration: underline;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+p{
+    color: rgb(233, 224, 224);
+    text-align: center;
+}
+
