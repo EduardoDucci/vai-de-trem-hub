@@ -8,7 +8,7 @@ body{
 
 #celular{
     margin: 100px 700px;
-    padding: 200px 100px;
+    padding: 80px 50px;
     background-color: #a6ccff;
     border-style:solid ;
     border-width: 10px;
@@ -19,7 +19,7 @@ body{
 }
 
 #icone{
-    width: 170px;
+    width: 90px;
 }
 
 #bem__vindo{
@@ -32,8 +32,9 @@ font-size: 25px;
     text-align: center;
 }
 
-#id{
+.idr{
     background-color: #539bf8;
+<<<<<<< HEAD
     padding: 17px;
 }
 
@@ -63,4 +64,50 @@ font-size: 25px;
 
 .meio{
     padding: 200px;
+=======
+    padding: 0px;
+    margin: 5px;
+    color: white;
+    text-decoration: underline;
+    opacity: 50%;
+    text-align: center;
+}
+
+.brazul{
+    background-color: #539bf8;
+    padding: 0px;
+    padding-left: 20px;
+    margin: 5px;
+    color: white;
+    text-decoration: underline;
+    
+}
+
+.brazulb{
+    background-color: #539bf8;
+    padding: 0px;
+    margin: 5px;
+    color: white;
+    text-decoration: underline;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+p{
+    color: rgb(233, 224, 224);
+    text-align: center;
+}
+
+.enterprise{
+    margin-bottom: 0px;
+    margin-top: 80px;
+    opacity: 50%;
+    font-size: 30px;
+
+    
+}
+h4{
+    opacity: 50%;
+>>>>>>> a2d4e7295a416d159078e781d66e84882c8f24ce
 }
