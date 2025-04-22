@@ -48,6 +48,35 @@ font-size: 25px;
 .idr{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #539bf8;
+    padding: 17px;
+}
+
+.wifi{
+    text-align: start;
+    padding: 10px;
+}
+
+
+.retangulo{
+    border-style: solid;
+    border-radius: 1%;
+    width: 200px;
+    border-color: #1f559b;
+    margin: 1px;
+    border-radius: 1px;
+    padding: 50px;
+    background-color: rgb(71, 71, 223);
+}
+
+.quadradao{
+    padding: 100px;
+    padding-right: 110px;
+    text-align: start;
+    background-color: rgb(115, 115, 233);
+}
+
+.meio{
+    padding: 200px;
     padding: 0px;
     margin: 5px;
     color: white;
@@ -109,12 +138,6 @@ font-size: 25px;
     color: white;
     text-decoration: underline;
     border-radius: 15px;
-    text-align: center;
-}
-
-
-p{
-    color: rgb(233, 224, 224);
     text-align: center;
 }
 
