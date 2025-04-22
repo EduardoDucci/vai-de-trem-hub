@@ -8,9 +8,9 @@ body{
 
 #celular{
     margin: 100px 700px;
-    padding: 100px 50px;
+    padding: 50px 50px;
     background-color: #a6ccff;
-    border-style:solid ;
+    border-style: solid;
     border-width: 10px;
     border-color: black;
     border-radius: 8px;
@@ -19,7 +19,7 @@ body{
 }
 
 #icone{
-    width: 140px;
+    width: 90px;
 }
 
 #bem__vindo{
@@ -32,12 +32,62 @@ font-size: 25px;
     text-align: center;
 }
 
+.opacity{
+    opacity: 50%;
+}
+
+.id{
+    background-color: #539bf8;
+    padding: 0px;
+    margin: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
 .idr{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #539bf8;
     padding: 0px;
     margin: 5px;
     color: white;
     text-decoration: underline;
-    opacity: 50%;
     text-align: center;
+    border-style: solid;
+    border-color: #8dbeff;
+}
+
+.idl{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #539bf8;
+    margin-top: 10px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    border-style: solid;
+    border-color: #8dbeff;
+    border-radius: 100px;
+}
+
+.ide{
+    background-color: #539bf8;
+    padding: 0px;
+    margin: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.jc{
+    padding-left:10px ;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.enterprise{
+    opacity: 50%;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 30px;
 }
