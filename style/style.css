@@ -125,23 +125,17 @@ font-size: 25px;
 }
 
 .brazul{
-    background-color: #74f853;
-
-    margin-top: 123px;
+    background-color: #539bf8;
     padding: 0px;
-
-    
     padding-left: 20px;
-    margin: 10px;
+    margin: 5px;
     color: white;
-
-
     text-decoration: underline;
     
 }
 
 .brazul__b{
-    background-color: #ff0000;
+    background-color: #539bf8;
     padding: 0px;
     margin: 5px;
     color: white;
@@ -158,9 +152,4 @@ font-size: 25px;
     width: 45px;
     margin: 5px;
     margin-right: 6px;
-}
-
-.invisivel{
-    padding: 50px;
-    background-color: #a6ccff;
 }
