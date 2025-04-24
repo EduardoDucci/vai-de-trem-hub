@@ -35,6 +35,7 @@ font-size: 25px;
 
 .opacity{
     opacity: 50%;
+    margin: 10px;
 }
 
 .id{
@@ -127,7 +128,7 @@ font-size: 25px;
     background-color: #539bf8;
     padding: 0px;
     padding-left: 20px;
-    margin: 5px;
+    margin: 10px;
     color: white;
     text-decoration: underline;
     
@@ -153,6 +154,7 @@ font-size: 25px;
     margin-right: 6px;
 }
 
-h4{
-    opacity: 50%;
+.invisivel{
+    padding: 50px;
+    background-color: #a6ccff;
 }
