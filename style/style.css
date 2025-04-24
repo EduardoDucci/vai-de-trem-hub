@@ -43,7 +43,7 @@ font-size: 25px;
     margin: 5px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 10px;
+    text-align: center;
 }
 
 .idr{
@@ -53,7 +53,7 @@ font-size: 25px;
     color: white;
     text-decoration: underline;
 }
- 
+
 .wifi{
     text-align: start;
     padding: 10px;
@@ -98,11 +98,11 @@ font-size: 25px;
     border-style: solid;
     border-color: #8dbeff;
     border-radius: 100px;
-    margin-bottom: 50px;
 }
 
 .ide{
     background-color: white;
+    padding: 0px;
     margin: 5px;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -120,28 +120,22 @@ font-size: 25px;
     opacity: 50%;
     color: white;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 80px;
     font-size: 30px;
 }
 
 .brazul{
-    background-color: #74f853;
-
-    margin-top: 123px;
+    background-color: #539bf8;
     padding: 0px;
-
-    
     padding-left: 20px;
     margin: 10px;
     color: white;
-
-
     text-decoration: underline;
     
 }
 
 .brazul__b{
-    background-color: #ff0000;
+    background-color: #539bf8;
     padding: 0px;
     margin: 5px;
     color: white;
