@@ -8,7 +8,8 @@ body{
 
 #celular{
     margin: 100px 700px;
-    padding: 50px 50px;
+    padding: 15px;
+    padding-top: 40px;
     background-color: #a6ccff;
     border-style: solid;
     border-width: 10px;
@@ -99,12 +100,13 @@ font-size: 25px;
 }
 
 .ide{
-    background-color: #539bf8;
+    background-color: white;
     padding: 0px;
     margin: 5px;
-    color: white;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    display: flex;
 }
 
 .jc{
@@ -141,3 +143,12 @@ font-size: 25px;
     text-align: center;
 }
 
+#icone__google{
+    width: 55px;
+}
+
+#icone__linkedin{
+    width: 45px;
+    margin: 5px;
+    margin-right: 6px;
+}
