@@ -192,3 +192,7 @@ input::placeholder {
     font-size: 16px;
 }
 
+.quadrado__verificar{
+    padding: 10px 10px;
+    background-color: #539bf8;
+}
