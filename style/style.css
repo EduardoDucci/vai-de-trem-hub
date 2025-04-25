@@ -183,3 +183,13 @@ input::placeholder {
     font-size: 15px;
     padding: 5px;
 }
+
+
+#numeronovo{
+    height: 25px;
+
+}
+
+.numeronovo{
+    text-align: center;
+}
