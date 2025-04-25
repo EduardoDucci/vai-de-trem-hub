@@ -172,7 +172,7 @@ font-size: 25px;
     color: #ffffff;
     background-color: #539bf8;
     border: none;
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: underline;
 }
 
@@ -182,7 +182,7 @@ font-size: 25px;
     border: none;
     font-size: 15px;
     padding: 5px;
-    width: 400px;
+    width: 390px;
 }
 
 input::placeholder {
