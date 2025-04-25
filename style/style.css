@@ -193,6 +193,14 @@ input::placeholder {
 }
 
 .quadrado__verificar{
-    padding: 10px 10px;
+    padding: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: #539bf8;
 }
+
+.display__cod{
+  display: flex;
+  margin-left: 40px;
+}
+
