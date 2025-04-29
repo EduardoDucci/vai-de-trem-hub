@@ -41,9 +41,11 @@ font-size: 25px;
 .id{
     background-color: #539bf8;
     margin: 5px;
+    padding: 5px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    font-size: 15px;
 }
 
 .idr{
@@ -130,8 +132,7 @@ font-size: 25px;
     padding-left: 20px;
     margin: 5px;
     color: white;
-    text-decoration: underline;
-    
+    text-decoration: underline;   
 }
 
 .brazul__b{
@@ -204,3 +205,7 @@ input::placeholder {
   margin-left: 40px;
 }
 
+.email__margin{
+    margin-top: 5px;
+  margin-bottom: 10px;
+}
