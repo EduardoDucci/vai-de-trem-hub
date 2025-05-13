@@ -205,3 +205,20 @@ input::placeholder {
     justify-content: center;
     align-items: center;
 }
+
+.fundocomunic{
+    background-color: #004aad;
+    padding: 200px 25px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.divcomunic{
+    background-color: #2f88ff;
+    padding: 50px 120px;
+    border-radius: 20px;
+    border: 3px;
+    border-color: #0058cd;
+    border-style: solid;
+
+}
