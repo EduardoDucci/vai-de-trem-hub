@@ -1,6 +1,3 @@
-
-
-
 body{
     background-color: #a6ccff;
     align-items: center;
@@ -203,5 +200,15 @@ input::placeholder {
 #ferrovia{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+#editar_perfil{
+    z-index: unset;
+    padding: 60px;
+
+}
+.azulado{
+    background-color: #1f559b;
     align-items: center;
 }
