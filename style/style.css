@@ -1,9 +1,12 @@
 
-
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
 body{
     background-color: #a6ccff;
     align-items: center;
+    margin: 0;
 }
 
 
@@ -204,4 +207,32 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#header__azul{
+    background-color: #539bf8;
+    padding: 10px;
+    position: absolute;
+}
+
+.sujestoes{
+    background-color: #256cc8;
+    padding: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-color: #0058cd;
+    border-radius: 20px;
+}
+
+#fa{
+    color: white;
+}
+
+#sujestoes__div{
+    margin: 2px;
+}
+
+#ferrovia{
+    position: relative;
 }
