@@ -31,6 +31,12 @@ font-size: 25px;
     margin: 10px;
 }
 
+.opacity__dois{
+    opacity: 50%;
+    margin: 0;
+    font-size: 20px;
+}
+
 .id{
     background-color: #539bf8;
     margin: 5px;
@@ -203,36 +209,69 @@ input::placeholder {
   margin-bottom: 10px;
 }
 
-#ferrovia{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#header__azul{
-    background-color: #539bf8;
-    padding: 10px;
+#header__azul {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    background-color: rgba(83, 155, 248); 
+    color: white;
+    padding: 10px;
+    z-index: 10; 
+  }
+
+#ferrovia {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .sujestoes{
     background-color: #256cc8;
-    padding: 30px;
+    padding: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     border-style: solid;
     border-color: #0058cd;
-    border-radius: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-#fa{
-    color: white;
+.fd{
+    background-color: #256cc8;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-color: #0058cd;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
 
 #sujestoes__div{
     margin: 2px;
 }
 
-#ferrovia{
-    position: relative;
+#ferrovia {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+.imagem-com-header {
+    position: relative; 
+    width: 100%;
+    height: auto;
+}
+
+#footer__home {
+    background-color: #256cc8;
+    padding: 55px;
+    margin: 0;
 }
