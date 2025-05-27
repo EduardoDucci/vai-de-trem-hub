@@ -269,6 +269,7 @@ input::placeholder {
 }
 
 #footer__home {
+    align-content: end;
     background-color: #256cc8;
     padding: 55px;
     margin: 0;
