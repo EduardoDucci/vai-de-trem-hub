@@ -264,7 +264,7 @@ input::placeholder {
     margin: 2px;
 }
 
-#ferrovia {
+.ferrovia {
     width: 85%;
     height: auto;
     display: block;
@@ -322,3 +322,12 @@ input::placeholder {
     margin-right: 11px;
 }
 
+#X__me{
+   width: 30px;
+   padding: 2px;
+}
+
+#X__me__p{
+    display: flex;
+    justify-content: end;
+}
