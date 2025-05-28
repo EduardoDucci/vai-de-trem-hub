@@ -30,6 +30,15 @@ body {
     opacity: 50%;
     margin: 0;
     font-size: 20px;
+    color: #ffffff;
+}
+
+.opacity__tres {
+    opacity: 50%;
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .id {
@@ -275,6 +284,7 @@ input::placeholder {
     align-content: end;
     background-color: #256cc8;
     padding: 10px;
+    padding-left: 6px;
     margin: 0;
     display: flex;
 }
@@ -299,9 +309,16 @@ input::placeholder {
 }
 
 .icones__footer{
-width: 70px;
-margin: 6px;
-margin-left: 11px;
-margin-right: 11px;
+    width: 70px;
+    margin: 6px;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+#icone__footer__sino{
+    width: 80px;
+    margin: 6px;
+    margin-left: 11px;
+    margin-right: 11px;
 }
 
