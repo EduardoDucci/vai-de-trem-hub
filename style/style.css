@@ -331,3 +331,32 @@ input::placeholder {
     display: flex;
     justify-content: end;
 }
+
+.botao-pronto {
+    background-color: #3399ff; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 25px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .botao-pronto:hover {
+    background-color: #2972cc;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+.fundoimagens {
+    background-color: #004aad;
+    padding: 150px 25px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.trem1 {
+    width: 30px;
+    padding: 2px;
+}
