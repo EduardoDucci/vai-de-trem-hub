@@ -208,7 +208,10 @@ input::placeholder {
 
 .display__cod {
     display: flex;
-    margin-left: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 .email__margin {
@@ -379,10 +382,13 @@ body {
   }
   
   .quadrado__verificar {
-    padding: 40px;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 60px;
+    height: 60px;
     background-color: #539bf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
   }
   
   .display__cod {
@@ -439,4 +445,16 @@ body {
       margin-top: 40px;
     }
   }
+
+  .quadrado__verificar textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    resize: none;
+    border: none;
+    background: transparent;
+    color: white;
+}
+
   
