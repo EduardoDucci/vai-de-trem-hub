@@ -162,7 +162,8 @@ body {
 }
 
 .invisivel {
-    padding: 50px;
+    height: 30px;
+    padding: 0;
     background-color: #a6ccff;
 
 }
@@ -181,12 +182,14 @@ body {
 }
 
 .text__box {
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
     color: #ffffff;
     background-color: #539bf8;
     border: none;
     font-size: 15px;
     padding: 5px;
-    width: 350px;
 }
 
 input::placeholder {
@@ -419,3 +422,20 @@ body {
     margin: 0;
     padding-bottom: 0;
   }
+
+  @media (max-width: 600px) {
+    #bem__vindo {
+      font-size: 20px;
+    }
+  
+    .button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    .enterprise {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+  }
+  
