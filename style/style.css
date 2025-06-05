@@ -271,7 +271,8 @@ input::placeholder {
     margin-bottom: 41px;
     margin-left: 50px; 
    padding-top: 90px;
-
+   object-fit: cover;
+   z-index: 1;
 }
 
 .imagem-com-header {
@@ -406,7 +407,15 @@ body {
   
   #pin__amarelo{
     width: 20px;
-    margin-top: 200px;
     position: absolute;
+    z-index: 2;
+  }
 
+  #jc__ap{
+    justify-content: center;
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-top: 100px;
+    margin: 0;
+    padding-bottom: 0;
   }
