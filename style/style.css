@@ -268,14 +268,14 @@ input::placeholder {
 }
 
 .ferrovia {
+    background-image: url(../images/icons/ferrovia.png);
     width: 75%;
     height: auto;
     display: block;
     margin-bottom: 41px;
     margin-left: 50px; 
    padding-top: 90px;
-   object-fit: cover;
-   z-index: 1;
+   
 }
 
 .imagem-com-header {
@@ -411,16 +411,17 @@ body {
   #pin__amarelo{
     width: 20px;
     position: absolute;
-    z-index: 2;
+    z-index: 11;
   }
 
   #jc__ap{
     justify-content: center;
     padding-left: 190px;
     padding-right: 190px;
-    padding-top: 100px;
+    padding-top: 150px;
     margin: 0;
     padding-bottom: 0;
+
   }
 
   @media (max-width: 600px) {
