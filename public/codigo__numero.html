@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autorizar numero</title>
     <link rel="stylesheet" href="../style/style.css">
+    <script src="../js/validacao-codigonumero.js"></script>
 </head>
 <body>
         <div class="container__centralizado">
@@ -15,14 +16,22 @@
         </div>
 
         <div class="display__cod">
-            <div class="quadrado__verificar"><textarea name="digito-1" id="codigo-numero" cols="10" rows="7" maxlength="1"></textarea></div>
-            <div class="quadrado__verificar"><textarea name="digito-2" id="codigo-numero" cols="10" rows="7" maxlength="1"></textarea></div>
-            <div class="quadrado__verificar"><textarea name="digito-3" id="codigo-numero" cols="10" rows="7" maxlength="1"></textarea></div>
-            <div class="quadrado__verificar"><textarea name="digito-4" id="codigo-numero" cols="10" rows="7" maxlength="1"></textarea></div>
-            
-        </div>
-        <br><br><br><br>
-        <button class="botao-pronto">Pronto!</button>
+            <div class="quadrado__verificar"><textarea id="digito-1" maxlength="1"></textarea></div>
+            <div class="quadrado__verificar"><textarea id="digito-2" maxlength="1"></textarea></div>
+            <div class="quadrado__verificar"><textarea id="digito-3" maxlength="1"></textarea></div>
+            <div class="quadrado__verificar"><textarea id="digito-4" maxlength="1"></textarea></div>
+          </div>
+          
+          <br><br><br><br>
+          
+          <button class="botao-pronto" id="btnValidar">Pronto!</button>
+          
+          <p id="mensagemErro" style="color: red; text-align: center;"></p>
+          
+        
+</body>
+</html>
+
 </body>
 
     
