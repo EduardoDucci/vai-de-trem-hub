@@ -141,6 +141,7 @@ body {
 .brazul__b {
     background-color: #539bf8;
     padding: 0px;
+    padding-left: 20px;
     margin: 5px;
     color: white;
     text-decoration: underline;
@@ -469,3 +470,15 @@ body {
 
 }
   
+.fundoimagens {
+    text-align: center;
+    padding: 10px;
+    margin: 9px;
+    color: white;
+}
+
+#imagens1 {
+    width: 340px;
+    margin: 3px;
+
+}
