@@ -473,9 +473,10 @@ body {
     text-align: center;
     padding: 10px;
     margin: 10px;
-
+color: white;
 }
 
-.imagens1 {
-    max-width: 100px;
+#imagens1 {
+    width: 350px;
+
 }
