@@ -469,3 +469,13 @@ body {
 
 }
   
+.fundoimagens {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.imagens1 {
+    max-width: 100px;
+}
