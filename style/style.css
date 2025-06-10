@@ -1,7 +1,4 @@
-
-
-
-body{
+body {
     background-color: #a6ccff;
     align-items: center;
     margin: 0;
@@ -9,33 +6,42 @@ body{
 
 
 
-#icone{
+#icone {
     margin-top: 50px;
     width: 90px;
 }
 
-#bem__vindo{
-color: aliceblue;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 25px;
+#bem__vindo {
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
 }
 
-#alinhar__texto{
+#alinhar__texto {
     text-align: center;
 }
 
-.opacity{
+.opacity {
     opacity: 50%;
     margin: 10px;
 }
 
-.opacity__dois{
+.opacity__dois {
     opacity: 50%;
     margin: 0;
     font-size: 20px;
+    color: #ffffff;
 }
 
-.id{
+.opacity__tres {
+    opacity: 50%;
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.id {
     background-color: #539bf8;
     margin: 5px;
     padding: 5px;
@@ -45,7 +51,7 @@ font-size: 25px;
     font-size: 15px;
 }
 
-.idr{
+.idr {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #539bf8;
     text-align: center;
@@ -53,13 +59,13 @@ font-size: 25px;
     text-decoration: underline;
 }
 
-.wifi{
+.wifi {
     text-align: start;
     padding: 10px;
 }
 
 
-.retangulo{
+.retangulo {
     border-style: solid;
     border-radius: 1%;
     width: 200px;
@@ -70,14 +76,14 @@ font-size: 25px;
     background-color: rgb(71, 71, 223);
 }
 
-.quadradao{
+.quadradao {
     padding: 100px;
     padding-right: 110px;
     text-align: start;
     background-color: rgb(115, 115, 233);
 }
 
-.meio{
+.meio {
     padding: 200px;
     margin: 5px;
     color: white;
@@ -87,7 +93,7 @@ font-size: 25px;
     border-color: #8dbeff;
 }
 
-.idl{
+.idl {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #539bf8;
     margin-top: 10px;
@@ -99,7 +105,7 @@ font-size: 25px;
     border-radius: 100px;
 }
 
-.ide{
+.ide {
     background-color: white;
     padding: 0px;
     margin: 5px;
@@ -109,13 +115,13 @@ font-size: 25px;
     display: flex;
 }
 
-.jc{
-    padding-left:10px ;
+.jc {
+    padding-left: 10px;
     color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.enterprise{
+.enterprise {
     opacity: 50%;
     color: white;
     text-align: center;
@@ -123,16 +129,16 @@ font-size: 25px;
     font-size: 30px;
 }
 
-.brazul{
+.brazul {
     background-color: #539bf8;
     padding: 12px;
     padding-left: 20px;
     margin: 5px;
     color: white;
-    text-decoration: underline;   
+    text-decoration: underline;
 }
 
-.brazul__b{
+.brazul__b {
     background-color: #539bf8;
     padding: 0px;
     margin: 5px;
@@ -144,29 +150,30 @@ font-size: 25px;
     border-color: #8dbeff;
 }
 
-#icone__google{
+#icone__google {
     width: 55px;
 }
 
-#icone__linkedin{
+#icone__linkedin {
     width: 45px;
     margin: 5px;
     margin-right: 6px;
-    
+
 }
 
-.invisivel{
-    padding: 50px;
+.invisivel {
+    height: 30px;
+    padding: 0;
     background-color: #a6ccff;
 
 }
 
-.invisivel__dois{
+.invisivel__dois {
     padding: 30px;
     background-color: #a6ccff;
 }
 
-.button{
+.button {
     color: #ffffff;
     background-color: #539bf8;
     border: none;
@@ -174,13 +181,15 @@ font-size: 25px;
     text-decoration: underline;
 }
 
-.text__box{
+.text__box {
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
     color: #ffffff;
     background-color: #539bf8;
     border: none;
     font-size: 15px;
     padding: 5px;
-    width: 350px;
 }
 
 input::placeholder {
@@ -190,21 +199,24 @@ input::placeholder {
     font-size: 16px;
 }
 
-.quadrado__verificar{
+.quadrado__verificar {
     padding: 40px;
     margin-left: 5px;
     margin-right: 5px;
     background-color: #539bf8;
 }
 
-.display__cod{
-  display: flex;
-  margin-left: 40px;
+.display__cod {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
 }
 
-.email__margin{
+.email__margin {
     margin-top: 5px;
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #header__azul {
@@ -212,21 +224,19 @@ input::placeholder {
     top: 0;
     left: 0;
     width: 95%;
-    background-color: rgba(83, 155, 248); 
+    background-color: rgba(83, 155, 248);
     color: white;
     padding: 10px;
-    z-index: 10; 
-  }
-
-#ferrovia {
-  width: 100%;
-  height: auto;
-  display: block;
+    z-index: 10;
+    padding-top: 5px;
+    padding-bottom: 3px;
 }
 
-.sujestoes{
+
+
+.sujestoes {
     background-color: #256cc8;
-    padding: 10px;
+    padding: 3px;
     margin-top: 5px;
     margin-bottom: 5px;
     border-style: solid;
@@ -238,7 +248,11 @@ input::placeholder {
     align-items: center;
 }
 
-.fd{
+.sujestoes__img{
+    width: 50px;
+}
+
+.fd {
     background-color: #256cc8;
     padding: 20px;
     margin-top: 5px;
@@ -252,42 +266,44 @@ input::placeholder {
 }
 
 
-#sujestoes__div{
+#sujestoes__div {
     margin: 2px;
 }
 
-#ferrovia {
-    width: 100%;
+.ferrovia {
+    width: 75%;
     height: auto;
     display: block;
-  }
+    margin-bottom: 41px;
+    margin-left: 50px; 
+   padding-top: 90px;
+   
+}
 
 .imagem-com-header {
-    position: relative; 
+    position: relative;
     width: 100%;
     height: auto;
 }
 
-#footer__home {
+#footer__home{
     align-content: end;
     background-color: #256cc8;
-    padding: 55px;
-    margin: 0;
-}
-#ferrovia{
+    padding: 10px;
+    padding-left: 6px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.fundocomunic{
+
+
+.fundocomunic {
     background-color: #004aad;
     padding: 200px 25px;
     margin: 20px;
     border-radius: 20px;
 }
 
-.divcomunic{
+.divcomunic {
     background-color: #2f88ff;
     padding: 50px 120px;
     border-radius: 20px;
@@ -296,3 +312,160 @@ input::placeholder {
     border-style: solid;
 
 }
+
+.icones__footer{
+    width: 70px;
+    margin: 6px;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+#icone__footer__sino{
+    width: 80px;
+    margin: 6px;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+#X__me{
+   width: 30px;
+   padding: 2px;
+}
+
+#X__me__p{
+    display: flex;
+    justify-content: end;
+}
+
+.fundoimagens {
+    background-color: #004aad;
+    padding: 150px 25px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.trem1 {
+    width: 30px;
+    padding: 2px;
+}
+
+body {
+    background-color: #a6ccff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container__centralizado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  #icone {
+    margin-top: 50px;
+    width: 90px;
+  }
+  
+  #bem__vindo {
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+  }
+  
+  #alinhar__texto {
+    text-align: center;
+  }
+  
+  .quadrado__verificar {
+    width: 60px;
+    height: 60px;
+    background-color: #539bf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .display__cod {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .botao-pronto {
+    background-color: #3399ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .botao-pronto:hover {
+    background-color: #2972cc;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  #pin__amarelo{
+    width: 20px;
+    position: absolute;
+    z-index: 11;
+  }
+
+  #jc__ap{
+    justify-content: center;
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-top: 100px;
+    margin: 0;
+    padding-bottom: 0;
+    
+
+  }
+
+  @media (max-width: 600px) {
+    #bem__vindo {
+      font-size: 20px;
+    }
+  
+    .button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    .enterprise {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+  }
+
+  .quadrado__verificar textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    resize: none;
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+#espaco__background{
+    background-image: url(../images/icons/ferrovia.png);
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    width: 60%;
+    height: 70vh;
+    margin-left: 78px;
+    margin-bottom: 30px;
+
+
+}
+  
