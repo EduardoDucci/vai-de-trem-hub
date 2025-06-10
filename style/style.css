@@ -141,6 +141,7 @@ body {
 .brazul__b {
     background-color: #539bf8;
     padding: 0px;
+    padding-left: 20px;
     margin: 5px;
     color: white;
     text-decoration: underline;
