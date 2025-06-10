@@ -473,10 +473,12 @@ body {
 .fundoimagens {
     text-align: center;
     padding: 10px;
-    margin: 10px;
-
+    margin: 9px;
+    color: white;
 }
 
-.imagens1 {
-    max-width: 100px;
+#imagens1 {
+    width: 340px;
+    margin: 3px;
+
 }
