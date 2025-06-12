@@ -492,12 +492,19 @@ body {
 
 .background__outro{
     background-color: #256cc8;
-    padding: 385px 100px;
+    padding: 50px 10px;
     margin-top: 28px;
     margin-bottom: 0px;
+    padding-bottom: 53px;
 }
 
 .background__dnv{
     background-color: #163f76;
-    padding: 360px 80px;
+    padding: 320px 100px;
+}
+
+.background__dnv__dois{
+    margin-top: 8px;
+    background-color: #163f76;
+    padding: 30px 100px;
 }
