@@ -485,3 +485,19 @@ body {
     margin: 3px;
 
 }
+
+.background__chat{
+    background-color: #539bf8;
+}
+
+.background__outro{
+    background-color: #256cc8;
+    padding: 385px 100px;
+    margin-top: 28px;
+    margin-bottom: 0px;
+}
+
+.background__dnv{
+    background-color: #163f76;
+    padding: 360px 80px;
+}
