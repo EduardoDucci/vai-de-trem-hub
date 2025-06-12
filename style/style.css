@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap');
+
 body {
     background-color: #a6ccff;
     align-items: center;
@@ -495,16 +497,33 @@ body {
     padding: 50px 10px;
     margin-top: 28px;
     margin-bottom: 0px;
-    padding-bottom: 53px;
+    padding-bottom: 42px;
 }
 
 .background__dnv{
     background-color: #163f76;
     padding: 320px 100px;
+    border-radius: 20px;
 }
 
 .background__dnv__dois{
     margin-top: 8px;
     background-color: #163f76;
-    padding: 30px 100px;
+    padding: 10px 0px;
+    padding-left: 20px;
+    border-radius: 15px;
+}
+
+#opacity__digite{
+    opacity: 50%;
+    font-size: 30px;
+    text-align: left;
+    color: white;
+    margin: 5px 0px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
 }
