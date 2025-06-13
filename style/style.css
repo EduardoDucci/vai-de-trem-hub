@@ -579,4 +579,71 @@ body {
     margin: 20px;
     border-radius: 20px;
     margin-top: 60px;
+    "wdth" 100;
+}
+
+#charles__img{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #a6ccff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dashboard {
+  width: 360px;
+  padding: 20px;
+  background-color: #539bf8;
+}
+
+.dashboard-texto {
+  background-color: #0047ab;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: grid;
+  gap: 15px;
+}
+
+.button-item {
+  background-color: #0056d2;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.button-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+#charles {
+    width: 100px;
+    height: 100px;
+    background-color: #539bf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#charles{
+    border-radius: 180px;
+    width: 40px;
+}
+
+.display__chat{
+  display: flex;
 }
