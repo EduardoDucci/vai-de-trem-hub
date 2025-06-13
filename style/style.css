@@ -527,3 +527,51 @@ body {
     font-variation-settings:
     "wdth" 100;
 }
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #a6ccff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dashboard {
+  width: 360px;
+  padding: 20px;
+  background-color: #539bf8;
+}
+
+.dashboard-texto {
+  background-color: #0047ab;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: grid;
+  gap: 15px;
+}
+
+.button-item {
+  background-color: #0056d2;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.button-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
