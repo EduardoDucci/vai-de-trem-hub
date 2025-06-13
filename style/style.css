@@ -527,3 +527,7 @@ body {
     font-variation-settings:
     "wdth" 100;
 }
+
+#charles{
+    border-radius: 180px;
+}
