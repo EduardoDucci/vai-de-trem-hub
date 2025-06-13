@@ -528,6 +528,11 @@ body {
     "wdth" 100;
 }
 
-#charles{
+#charles__img{
     border-radius: 180px;
+    width: 40px;
+}
+
+.display__chat{
+  display: flex;
 }
