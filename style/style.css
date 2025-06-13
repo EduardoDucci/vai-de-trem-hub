@@ -575,3 +575,16 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 40px;
   margin-bottom: 10px;
 }
+#charles {
+    width: 100px;
+    height: 100px;
+    background-color: #539bf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#charles{
+    border-radius: 180px;
+}
