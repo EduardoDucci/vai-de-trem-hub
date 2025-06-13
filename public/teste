@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/style.css">
+  <title>Vai de Trem Hub</title>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #58b0fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dashboard-container {
+  width: 360px;
+  padding: 20px;
+  background-color: #007bff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-title {
+  background-color: #0047ab;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 3px solid #7ea8ff;
+}
+
+.grid-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.button-item {
+  background-color: #0056d2;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.button-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.button-item p {
+  font-size: 16px;
+}
+
+.button-item:hover {
+  background-color: #003b99;
+}
+
+</style>
+<body>
+  <main>
+    <div class="dashboard-container">
+      <h1 class="dashboard-title">Dashboard</h1>
+      <div class="grid-buttons">
+        <div class="button-item">
+          <img src="../images/icons/camera.png" alt="Câmeras">
+          <p>Cameras</p>
+        </div>
+        <div class="button-item">
+          <img src="../images/icons/chat.png" alt="Chat">
+          <p>Chat</p>
+        </div>
+        <div class="button-item">
+          <img src="../images/icons/rotas.png" alt="Rotas">
+          <p>Rotas</p>
+        </div>
+        <div class="button-item">
+          <img src="../images/icons/avisos.png" alt="Avisos">
+          <p>Avisos</p>
+        </div>
+        <div class="button-item">
+          <img src="../images/icons/perfil.png" alt="Perfil">
+          <p>Perfil</p>
+        </div>
+        <div class="button-item">
+          <img src="../images/icons/sistema.png" alt="Sistema">
+          <p>Sistema</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
+
