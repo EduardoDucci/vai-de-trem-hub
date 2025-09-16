@@ -16,7 +16,7 @@
         
 
         <div class='idr'>
-            <a href="../public/Registro.php">
+            <a href="registrar__se.php">
                 <div class="opacity">
                    <button class="button">Registrar-se</button>
                 </div>
