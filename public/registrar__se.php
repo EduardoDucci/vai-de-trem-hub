@@ -34,7 +34,7 @@
          </div>
  
          <div class='brazul__b'>
-            <a href="../index.html">
+            <a href="login.php">
                 <div class="opacity">
                    <button class="button">Registrar-se</button>
                 </div>
