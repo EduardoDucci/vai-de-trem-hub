@@ -2,19 +2,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <title>login</title>
 </head>
+
 <body>
    
+          <div id='alinhar__texto'>
+             <img id='icone' src="../images/icons/icone__principal.png">
+             <p id='bem__vindo'>Bem vindo!</p>
+         </div>
 
-        <div id='alinhar__texto'>
-         <img id='icone' src="images/icons/icone__principal.png">
-         <p id='bem__vindo'>Bem vindo!</p>
-        </div>
+        
 
         <div class='idr'>
-            <a href="public/Registro.html">
+            <a href="../public/Registro.php">
                 <div class="opacity">
                    <button class="button">Registrar-se</button>
                 </div>
@@ -31,11 +33,11 @@
         </div>
 
         <div class='id'>
-            <div><input type='text' class="text__box" name='na' placeholder="Senha...⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"></div>
+            <div><input type='password' class="text__box" name='na' placeholder="Senha...⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"></div>
         </div>
 
         <div class='idl'>
-            <a href="public/home.html">
+            <a href="../public/home.php">
                 <div class="opacity">
                    <button class="button">Fazer login</button>
                 </div>
@@ -43,12 +45,12 @@
         </div>
         
         <div class='ide'>
-            <img id="icone__google" src="images/icons/google__icon.png">
+            <img id="icone__google" src="../images/icons/google__icon.png">
             <p>Entrar com Google</p>
         </div>
         
         <div class='ide'>
-            <img id="icone__linkedin" src="images/icons/linkedin__icon.png">
+            <img id="icone__linkedin" src="../images/icons/linkedin__icon.png">
             <p>Entrar com Linkedin</p>
         </div>
         

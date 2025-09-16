@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap');
 
+ 
 body {
-    background-color: #a6ccff;
-    align-items: center;
-    margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #a6ccff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100px;
+  flex-direction: column
 }
-
 
 
 #icone {
     margin-top: 50px;
-    width: 90px;
+    width: 90px;    
 }
 
 #bem__vindo {
@@ -347,12 +351,6 @@ input::placeholder {
     border-radius: 20px;
 }
 
-body {
-    background-color: #a6ccff;
-    margin: 0;
-    padding: 0;
-}
-
 .container__centralizado {
     display: flex;
     flex-direction: column;
@@ -579,7 +577,7 @@ body {
     margin: 20px;
     border-radius: 20px;
     margin-top: 60px;
-    "wdth" 100;
+    width: 100;
 }
 
 #charles__img{
@@ -589,14 +587,7 @@ body {
     width: 40px;
 }
 
-body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #a6ccff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+
 
 .dashboard {
   width: 360px;
