@@ -37,7 +37,7 @@
         </div>
 
         <div class='idl'>
-            <a href="../public/home.php">
+            <a href="dashboard.php">
                 <div class="opacity">
                    <button class="button">Fazer login</button>
                 </div>
