@@ -2,13 +2,16 @@
 
  
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #a6ccff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height:100px;
-  flex-direction: column
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #a6ccff;
+    display: flex
+;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
 }
 
 
@@ -360,10 +363,7 @@ input::placeholder {
     text-align: center;
 }
 
-#icone {
-    margin-top: 50px;
-    width: 90px;
-}
+
 
 #bem__vindo {
     color: aliceblue;

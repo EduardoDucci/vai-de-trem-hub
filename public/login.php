@@ -1,17 +1,17 @@
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <title>login</title>
-</head>
+ </head>
 
-<body>
+ <body>
    
-          <div id='alinhar__texto'>
-             <img id='icone' src="../images/icons/icone__principal.png">
-             <p id='bem__vindo'>Bem vindo!</p>
-         </div>
+      <div id='alinhar__texto'>
+            <img id='icone' src="../images/icons/icone__principal.png">
+           <p id='bem__vindo'>Bem vindo!</p>
+      </div>
 
         
 
@@ -58,5 +58,5 @@
             <p>Goudard Enterprises</p>
         </div>
 
-</body>
+ </body>
 </html>
