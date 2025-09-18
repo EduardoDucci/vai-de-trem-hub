@@ -56,10 +56,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class='idl'>
                 <div class="opacity">
-                   <button class="button">Fazer login</button>
+                   <button class="button" type="submit">Fazer login</button>
                 </div>
-            </a>
-        </div>
+            </div>
+       </form>
         
         <div class='ide'>
             <img id="icone__google" src="../images/icons/google__icon.png">
