@@ -60,3 +60,8 @@ CREATE TABLE bilhete (
     data_compra DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (id_viagem) REFERENCES viagem(id_viagem)
 );
+
+insert into funcionario (nome, cargo, telefone, cpf) values
+('Caio', 'administrativo', '5547996121780', '13903538930');
+
+INSERT INTO usuarios (username, senha) VALUES ('admin','123');
