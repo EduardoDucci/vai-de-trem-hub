@@ -63,10 +63,10 @@ CREATE TABLE bilhete (
 
 
 CREATE TABLE usuarios (
-	pk INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(120) NOT NULL UNIQUE,
+	id_usuarios INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(120) NOT NULL UNIQUE,
     senha VARCHAR(255) NOT NULL,
     cargo ENUM('adm','func') NOT NULL
 );
 
-INSERT INTO usuarios (username, senha) VALUES ('admin','123');
+INSERT INTO usuarios (usuario, senha) VALUES ('caio','123');

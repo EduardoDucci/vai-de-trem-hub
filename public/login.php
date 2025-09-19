@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     $usuario = $_POST['usuario'] ?? '';
     $senha = $_POST['senha'] ?? '';
-    $sql = "SELECT id_funcionario, nome FROM funcionario WHERE nome=? AND cpf=?";
+    $sql = "SELECT id_usuarios, usuario FROM usuarios WHERE usuario=? AND senha=?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ss", $usuario, $senha);
     $stmt->execute();
