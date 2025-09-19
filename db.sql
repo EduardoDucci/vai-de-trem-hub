@@ -61,7 +61,12 @@ CREATE TABLE bilhete (
     FOREIGN KEY (id_viagem) REFERENCES viagem(id_viagem)
 );
 
-insert into funcionario (nome, cargo, telefone, cpf) values
-('Caio', 'administrativo', '5547996121780', '13903538930');
+
+CREATE TABLE usuarios (
+	pk INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(120) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    cargo ENUM('adm','func') NOT NULL
+);
 
 INSERT INTO usuarios (username, senha) VALUES ('admin','123');

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $conn = new mysqli('localhost', 'root', '', 'ferrovia_db');
+    $conn = new mysqli('localhost', 'root', 'root', 'ferrovia_db');
     if ($conn->connect_error) {
         die('Erro de conexão: ' . $conn->connect_error);
     }
