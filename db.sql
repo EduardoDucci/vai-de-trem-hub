@@ -69,4 +69,5 @@ CREATE TABLE usuarios (
     cargo ENUM('adm','func') NOT NULL
 );
 
-INSERT INTO usuarios (usuario, senha) VALUES ('caio','123');
+
+INSERT INTO usuarios (usuario, senha) VALUES ('Caio','123');
