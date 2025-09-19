@@ -61,18 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
        </form>
         
-        <div class='ide'>
-            <img id="icone__google" src="../images/icons/google__icon.png">
-            <p>Entrar com Google</p>
-        </div>
-        
-        <div class='ide'>
-            <img id="icone__linkedin" src="../images/icons/linkedin__icon.png">
-            <p>Entrar com Linkedin</p>
-        </div>
-        
         <div class='enterprise'>
-            <p>Goudard Enterprises</p>
+            <p>trem Enterprises</p>
         </div>
 
  </body>
