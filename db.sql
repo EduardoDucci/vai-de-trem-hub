@@ -70,4 +70,4 @@ CREATE TABLE usuarios (
 );
 
 
-INSERT INTO usuarios (usuario, senha) VALUES ('Caio','123');
+INSERT INTO usuarios (usuario, senha) VALUES ('caio','123');
