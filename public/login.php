@@ -1,28 +1,6 @@
-<?php
-session_start();
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $conn = new mysqli('localhost', 'root', 'root', 'ferrovia_db');
-    if ($conn->connect_error) {
-        die('Erro de conexão: ' . $conn->connect_error);
-    }
-    $usuario = $_POST['usuario'] ?? '';
-    $senha = $_POST['senha'] ?? '';
-    $sql = "SELECT id_usuarios, usuario FROM usuarios WHERE usuario=? AND senha=?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $usuario, $senha);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    if ($result->num_rows === 1) {
-        $_SESSION['usuario'] = $result->fetch_assoc();
-        header('Location: dashboard.php');
-        exit;
-    } else {
-        $erro = "Usuário ou senha inválidos.";
-    }
-    $stmt->close();
-    $conn->close();
-}
-?>
+ <?php
+  include '../config/db.php'
+ ?>
 <html lang="en">
  <head>
     <meta charset="UTF-8">
@@ -34,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
  <body>
    
       <div id='alinhar__texto'>
-            <img id='icone' src="../images/icons/icone__principal.png">
+            <img id='icone' src="../assets/icons/icone__principal.png">
            <p id='bem__vindo'>Bem vindo!</p>
       </div>
         <div class='idr'>
