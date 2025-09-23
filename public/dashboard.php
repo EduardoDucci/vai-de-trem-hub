@@ -16,42 +16,42 @@
 
         <a href="cameras.html">
           <div class="button-item">
-            <img src="../images/icons/camera.png" alt="Câmeras">
+            <img src="../assets/icons/camera.png" alt="Câmeras">
             <p>Cameras</p>
           </div>
         </a>
 
         <a href="Chat.html">
           <div class="button-item">
-            <img src="../images/icons/chat.png" alt="Chat">
+            <img src="../assets/icons/chat.png" alt="Chat">
             <p>Chat</p>
           </div>
         </a>
 
         <a href="rotas.html">
           <div class="button-item">
-            <img src="../images/icons/rotas.png" alt="Rotas">
+            <img src="../assets/icons/rotas.png" alt="Rotas">
             <p>Rotas</p>
           </div>
         </a>
 
         <a href="comunicados.html">
           <div class="button-item">
-            <img src="../images/icons/avisos.png" alt="Avisos">
+            <img src="../assets/icons/avisos.png" alt="Avisos">
             <p>Avisos</p>
           </div>
         </a>
 
         <a href="perfil__funcionario.html">
           <div class="button-item">
-            <img src="../images/icons/perfil.png" alt="Perfil">
+            <img src="../assets/icons/perfil.png" alt="Perfil">
             <p>Perfil</p>
           </div>
         </a>
 
         <a href="">
           <div class="button-item">
-            <img src="../images/icons/sistema.png" alt="Sistema">
+            <img src="../assets/icons/sistema.png" alt="Sistema">
             <p>Sistema</p>
           </div>
         </a>
