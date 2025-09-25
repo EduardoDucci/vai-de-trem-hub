@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Victor polzin",
+        "avatar": "..\/images\/charles.png",
+        "text": "Bom dia, equipe! Precisamos de um resumo da situação atual da linha principal. Alguma novidade?"
+    },
+    {
+        "name": "Ana Julia",
+        "avatar": "..\/images\/ana__julia.png",
+        "text": "Bom dia! A linha principal está com fluxo normal no momento. Sem atrasos significativos. O trem de carga A68 deve passar pela estação central em 30 minutos."
+    },
+    {
+        "name": "Amir",
+        "avatar": "..\/images\/Amir.png",
+        "text": "Terminei a inspeção no trecho próximo à ponte do Rio Claro. Tudo em ordem, sem necessidade de reparos imediatos."
+    }
+]
