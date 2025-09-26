@@ -51,7 +51,7 @@
        
         <div class='voltar'>
             <div class="opacity">
-                <button class="button"  type="">login</button>
+               <a href="login.php"><button class="button"  type="">Fazer login</button></a> 
             </div>
         </div>      
         
@@ -59,6 +59,6 @@
 
       <div class="enterprise">
         <p>Goudard Enterprise</p>
-    </div>      
+      </div>      
 </body>
 </html>

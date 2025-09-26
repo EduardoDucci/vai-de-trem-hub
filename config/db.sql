@@ -66,9 +66,12 @@ CREATE TABLE usuarios (
 	id_usuarios INT AUTO_INCREMENT PRIMARY KEY,
     usuario VARCHAR(120) NOT NULL UNIQUE,
     senha VARCHAR(255) NOT NULL,
-    cargo ENUM('adm','func') NOT NULL
+    cargo ENUM('adm','func') NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    numero VARCHAR(255) NOT NULL
+
 );
 
 
-INSERT INTO usuarios (usuario, senha) VALUES ('João','1234'),('Jaison','12345'),('Eduardo','123456'),
-('Caio','123');
+INSERT INTO usuarios (usuario, senha, cargo) VALUES ('João','1234','adm'),('Jaison','12345','adm'),('Eduardo','123456','adm'),
+('Caio','123','adm');

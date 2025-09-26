@@ -32,7 +32,7 @@ body {
 
 .opacity {
     opacity: 50%;
-    margin: 10px;
+    margin: 5px;
 }
 
 .opacity__dois {
@@ -189,6 +189,7 @@ body {
     border: none;
     font-size: 17px;
     text-decoration: underline;
+    text-align: center;
 }
 
 .text__box {
@@ -442,6 +443,7 @@ input::placeholder {
     .button {
         font-size: 16px;
         padding: 8px 16px;
+        text-align: center;
     }
 
     .enterprise {
@@ -629,4 +631,18 @@ input::placeholder {
 
 .display__chat{
   display: flex;
+}
+
+.voltar{
+    background-color: #539bf8;
+    padding: 0px;
+    padding-left: 10px;
+    margin: 5px;
+    color: white;
+    text-decoration: underline;
+    border-radius: 15px;
+    text-align: center;
+    border-style: solid;
+    border-color: #8dbeff;  
+    width: 80px;
 }

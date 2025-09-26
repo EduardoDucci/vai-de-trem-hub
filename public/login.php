@@ -34,7 +34,7 @@
             </div>
             <div class='idl'>
                 <div class="opacity">
-                   <button class="button" type="submit">Fazer login</button>
+                   <button class="button" type="submit">login</button>
                 </div>
             </div>
        </form>
