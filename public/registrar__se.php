@@ -17,7 +17,6 @@
 
     <div class="invisivel"></div>
 
-    <!-- FORMULÁRIO CORRIGIDO -->
     <form method="POST" action="">
         <div class='brazul'>
             <div>
@@ -49,8 +48,16 @@
             </div>
         </div>
     </form>
+       
+        <div class='voltar'>
+            <div class="opacity">
+                <button class="button"  type="">login</button>
+            </div>
+        </div>      
+        
+    
 
-    <div class="enterprise">
+      <div class="enterprise">
         <p>Goudard Enterprise</p>
     </div>      
 </body>
