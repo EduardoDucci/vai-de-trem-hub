@@ -51,7 +51,7 @@
        
         <div class='voltar'>
             <div class="opacity">
-               <a href="login.php"><button class="button"  type="">Fazer login</button></a> 
+               <a href="login.php"><button class="button"  type="">Voltar</button></a> 
             </div>
         </div>      
         
