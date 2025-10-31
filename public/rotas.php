@@ -23,7 +23,6 @@
        <img class="ferrovia" src='../images/icons/ferrovia.png'>
     </div>
 
-
     <div id="footer__home">
         <img class="icones__footer" src="../images/icons/loc__icon.png" alt="loc">
         <a href="comunicados.html"><img id="icone__footer__sino" src="../images/icons/sino__icon.png" alt="sino"></a>
