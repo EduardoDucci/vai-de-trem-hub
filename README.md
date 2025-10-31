@@ -1,30 +1,34 @@
-  ### VAI-DE-TREM-HUB ###
+# 🚆 Gestão Ferroviária - Banco de Dados
 
-Banco de Dados – Gestão Ferroviária 🚆
-Visão Geral
+Um banco de dados simples e funcional para um sistema de **gestão ferroviária**. Inclui controle de usuários, trens, alertas de manutenção e rotas.
 
-Script simples e direto para criar o banco de dados gestao_ferroviaria_db, usado em um sistema de controle de trens, rotas e alertas de manutenção.
+---
 
-Cria quatro tabelas principais:
+## 🧭 Visão Geral
 
-usuarios – controla login e função (admin ou funcionário)
+Este projeto cria o banco **`gestao_ferroviaria_db`**, com estrutura pronta para uso em sistemas de controle de trens e operações.
 
-trens – lista e status de cada trem
+Tabelas principais:
 
-alertas_manutencao – registra problemas e severidade
+* 👤 **usuarios** → login e cargo (adm ou func)
+* 🚆 **trens** → lista de trens e status
+* ⚠️ **alertas_manutencao** → problemas registrados
+* 🗺️ **rotas** → trajeto e horários
 
-rotas – mostra os trajetos com horários previstos
+---
 
-Como usar
+## ⚙️ Como Usar
 
-Abra seu gerenciador MySQL (ex: phpMyAdmin ou terminal).
+1. Abra seu gerenciador **MySQL** (phpMyAdmin, DBeaver ou terminal).
+2. Copie e cole o código abaixo.
+3. Execute para criar o banco e os dados de exemplo.
 
-Cole o código abaixo e execute.
+---
 
-O sistema já vem com alguns dados de exemplo.
+## 💾 Script SQL Completo
 
-Script SQL
-CREATE DATABASE IF NOT EXISTS gestao_ferroviaria_db 
+```sql
+CREATE DATABASE IF NOT EXISTS gestao_ferroviaria_db
   DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE gestao_ferroviaria_db;
 
@@ -92,17 +96,23 @@ INSERT INTO rotas (nome, estacao_partida, estacao_chegada, horario_partida, hora
   ('Rota Expressa 101', 'Estação Central', 'Estação Norte', DATE_ADD(NOW(), INTERVAL 2 HOUR), DATE_ADD(NOW(), INTERVAL 4 HOUR), 1),
   ('Linha Metrô 02', 'Estação Sul', 'Estação Leste', DATE_ADD(NOW(), INTERVAL 3 HOUR), DATE_ADD(NOW(), INTERVAL 4 HOUR), 2),
   ('Rota Suburbana 55', 'Estação Central', 'Estação Oeste', DATE_ADD(NOW(), INTERVAL 5 HOUR), DATE_ADD(NOW(), INTERVAL 7 HOUR), 5);
+```
 
-Teste rápido
+---
+
+## 🧪 Teste Rápido
+
+```sql
 SELECT * FROM usuarios;
 SELECT * FROM trens;
 SELECT * FROM alertas_manutencao;
 SELECT * FROM rotas;
+```
 
-Dicas
+---
 
-As senhas são exemplos (hash do texto “password”).
+## 💡 Dicas
 
-Altere e-mails e senhas para o seu uso real.
-
-Sempre insira trens antes dos alertas e rotas (para manter os vínculos).
+* As senhas são apenas exemplos (hash do texto `password`).
+* Altere os e-mails e senhas conforme seu ambiente.
+* Crie os trens antes dos alertas e rotas, para não quebrar os vínculos.
