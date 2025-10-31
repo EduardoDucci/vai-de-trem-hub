@@ -12,7 +12,7 @@
 <body>
     <div id='alinhar__texto'>
         <img id="icone" src='../assets/icons/icone__principal.png'>
-        <p id='bem__vindo'>Bem vindo!!!</p>
+        <p id='bem__vindo'>Bem vindo!</p>
     </div>
 
     <div class="invisivel"></div>
