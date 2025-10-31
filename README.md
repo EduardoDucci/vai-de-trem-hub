@@ -28,74 +28,89 @@ Tabelas principais:
 ## 💾 Script SQL Completo
 
 ```sql
-CREATE DATABASE IF NOT EXISTS gestao_ferroviaria_db
-  DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE gestao_ferroviaria_db;
+CREATE DATABASE ferrovia_db;
+USE ferrovia_db;
 
-DROP TABLE IF EXISTS rotas;
-DROP TABLE IF EXISTS alertas_manutencao;
-DROP TABLE IF EXISTS trens;
-DROP TABLE IF EXISTS usuarios;
+CREATE TABLE estacao (
+    id_estacao INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cidade VARCHAR(100),
+    estado VARCHAR(50)
+);
+
+CREATE TABLE trem (
+    id_trem INT AUTO_INCREMENT PRIMARY KEY,
+    modelo VARCHAR(100) NOT NULL,
+    capacidade_passageiros INT NOT NULL,
+    ano_fabricacao YEAR,
+    status ENUM('operacional', 'manutenção', 'fora de serviço') DEFAULT 'operacional'
+);
+
+CREATE TABLE funcionario (
+    id_funcionario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cargo ENUM('maquinista', 'manutenção', 'atendente', 'administrativo') NOT NULL,
+    telefone VARCHAR(20),
+    cpf VARCHAR(14) UNIQUE NOT NULL
+);
+
+CREATE TABLE rota (
+    id_rota INT AUTO_INCREMENT PRIMARY KEY,
+    estacao_origem_id INT NOT NULL,
+    estacao_destino_id INT NOT NULL,
+    distancia_km DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (estacao_origem_id) REFERENCES estacao(id_estacao),
+    FOREIGN KEY (estacao_destino_id) REFERENCES estacao(id_estacao)
+);
+
+CREATE TABLE viagem (
+    id_viagem INT AUTO_INCREMENT PRIMARY KEY,
+    id_trem INT NOT NULL,
+    id_rota INT NOT NULL,
+    data_partida DATETIME NOT NULL,
+    data_chegada DATETIME NOT NULL,
+    id_maquinista INT,
+    FOREIGN KEY (id_trem) REFERENCES trem(id_trem),
+    FOREIGN KEY (id_rota) REFERENCES rota(id_rota),
+    FOREIGN KEY (id_maquinista) REFERENCES funcionario(id_funcionario)
+);
+
+CREATE TABLE bilhete (
+    id_bilhete INT AUTO_INCREMENT PRIMARY KEY,
+    id_viagem INT NOT NULL,
+    nome_passageiro VARCHAR(100) NOT NULL,
+    documento VARCHAR(20),
+    assento VARCHAR(10),
+    data_compra DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_viagem) REFERENCES viagem(id_viagem)
+);
 
 CREATE TABLE usuarios (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  nome VARCHAR(120) NOT NULL,
-  email VARCHAR(120) NOT NULL UNIQUE,
-  senha VARCHAR(255) NOT NULL,
-  cargo ENUM('adm','func') DEFAULT 'func',
-  data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    id_usuarios INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(120) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    cargo ENUM('adm','func') NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    numero VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE trens (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  nome VARCHAR(100) NOT NULL,
-  status ENUM('em_operacao','em_manutencao','parado') DEFAULT 'parado',
-  capacidade INT DEFAULT 0,
-  data_aquisicao DATE
-);
+INSERT INTO usuarios (usuario, senha, cargo, email, numero) VALUES
+('João','1234','adm','joao@example.com','+55XXXXXXXXXXX'),
+('Jaison','12345','adm','jaison@example.com','+55XXXXXXXXXXX'),
+('Eduardo','123456','adm','eduardo@example.com','+55XXXXXXXXXXX'),
+('Caio','123','adm','caio@example.com','+55XXXXXXXXXXX');
 
+-- ADIÇÃO (o que não tinha no script mãe):
 CREATE TABLE alertas_manutencao (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  id_trem INT NOT NULL,
-  descricao TEXT NOT NULL,
-  severidade ENUM('baixa','media','alta') DEFAULT 'baixa',
-  status ENUM('aberto','fechado') DEFAULT 'aberto',
-  data_abertura TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  data_fechamento TIMESTAMP NULL,
-  FOREIGN KEY (id_trem) REFERENCES trens(id) ON DELETE CASCADE
+    id_alerta INT AUTO_INCREMENT PRIMARY KEY,
+    id_trem INT NOT NULL,
+    descricao TEXT NOT NULL,
+    severidade ENUM('baixa','media','alta') DEFAULT 'baixa',
+    status ENUM('aberto','fechado') DEFAULT 'aberto',
+    data_abertura TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    data_fechamento TIMESTAMP NULL,
+    FOREIGN KEY (id_trem) REFERENCES trem(id_trem) ON DELETE CASCADE
 );
-
-CREATE TABLE rotas (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  nome VARCHAR(150) NOT NULL,
-  estacao_partida VARCHAR(100) NOT NULL,
-  estacao_chegada VARCHAR(100) NOT NULL,
-  horario_partida DATETIME NOT NULL,
-  horario_chegada_previsto DATETIME NOT NULL,
-  id_trem_designado INT NOT NULL,
-  FOREIGN KEY (id_trem_designado) REFERENCES trens(id)
-);
-
-INSERT INTO usuarios (nome, email, senha, cargo) VALUES
-  ('Admin', 'admin@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'adm'),
-  ('Operador', 'user@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'func');
-
-INSERT INTO trens (nome, status, capacidade, data_aquisicao) VALUES
-  ('Trem Alfa', 'em_operacao', 300, '2023-01-15'),
-  ('Expresso 102', 'em_operacao', 500, '2022-05-20'),
-  ('Cargueiro 03A', 'parado', 0, '2020-11-10'),
-  ('Regional V01', 'em_manutencao', 150, '2021-03-05'),
-  ('Expresso 103', 'em_operacao', 500, '2022-05-20');
-
-INSERT INTO alertas_manutencao (id_trem, descricao, severidade, status, data_abertura, data_fechamento) VALUES
-  (4, 'Falha no sistema de freios.', 'alta', 'aberto', CURRENT_TIMESTAMP, NULL),
-  (1, 'Desgaste nas rodas.', 'media', 'aberto', CURRENT_TIMESTAMP, NULL),
-  (2, 'Ar condicionado inoperante.', 'baixa', 'fechado', '2025-10-25 10:00:00', '2025-10-25 12:15:00');
-
-INSERT INTO rotas (nome, estacao_partida, estacao_chegada, horario_partida, horario_chegada_previsto, id_trem_designado) VALUES
-  ('Rota Expressa 101', 'Estação Central', 'Estação Norte', DATE_ADD(NOW(), INTERVAL 2 HOUR), DATE_ADD(NOW(), INTERVAL 4 HOUR), 1),
-  ('Linha Metrô 02', 'Estação Sul', 'Estação Leste', DATE_ADD(NOW(), INTERVAL 3 HOUR), DATE_ADD(NOW(), INTERVAL 4 HOUR), 2),
-  ('Rota Suburbana 55', 'Estação Central', 'Estação Oeste', DATE_ADD(NOW(), INTERVAL 5 HOUR), DATE_ADD(NOW(), INTERVAL 7 HOUR), 5);
 ```
 
 ---
