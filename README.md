@@ -64,8 +64,7 @@ Antes de usar o sistema, configure o arquivo `db.php` com os dados do seu servid
 
 ```php
 <?php
-$host     = "localhost";      // Host do banco
-$username = "seu_usuario";    // Usuário do MySQL
-$password = "sua_senha";      // Senha do MySQL
-$database = "vai_de_trem";    // Nome do banco de dados
-$port     = "3306";           // Porta do MySQL (padrão 3306)
+$DB_HOST = 'localhost';
+$DB_USER = 'root';
+$DB_PASS = 'root';
+$DB_NAME = 'vaidetrem2';   
