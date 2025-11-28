@@ -54,10 +54,6 @@ Atualmente, o projeto já conta com **back-end em PHP** integrado ao **MySQL** v
 - 🗑️ Exclusão de registros;  
 - 🧭 Navegação simples e organizada entre as telas.
 
-*(Esses itens podem ser ajustados conforme o que foi realmente implementado.)*
-
----
-
 ## 🗄️ Configuração do Banco de Dados
 
 Antes de usar o sistema, configure o arquivo `db.php` com os dados do seu servidor:
